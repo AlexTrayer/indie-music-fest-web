@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+</head>
+<body>
+    <h1>Tickets</h1>  
+    <nav>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="artists.html">Artists</a></li>
+       <li><a href="tickets.html">Tickets</a></li>
+       </ul>
+    </nav>
+
+    <div class="ticket purchase">
+        <h2>Purchase Tickets</h2>
+        <p>Please make sure you fill the form correctly. Fields marked with * are mandatory</p>
+        
+        <form action="/signup" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Buy Tickets for the Festival</legend>
+            <div>
+                <label for="name">Full Name:* </label>
+                <input type="text" name="name" required autocomplete="name" placeholder="Enter Your Full Name">
+            </div>
+            <div>
+                <label for="email">Email:* </label>
+                <input type="email" name="email" required autocomplete="email" placeholder="YorEmail@gmail.com">
+            </div>
+            <div>
+                <label for="phone">Phone Number:* </label>
+                <input type="tel" name="phone" required>
+            </div>
+            
+            <div>
+                <label for="tickets quantity">Tickets Quantity: </label>
+                <div>
+                    <input type="radio" name="tickets quantity" id="qty1" value="1">
+                    <label for="qty1">1</label>
+                </div>
+                    <div>
+                    <input type="radio" name="tickets quantity" id="qty2" value="2">
+                    <label for="qty2">2</label>
+                </div>
+                    <div>
+                    <input type="radio" name="tickets quantity" id="qty3" value="3">
+                    <label for="qty3">3</label>
+                </div>
+                    <div>
+                    <input type="radio" name="tickets quantity" id="qty4" value="4">
+                    <label for="qty4">4</label>
+                </div>
+                    <div>
+                    <input type="radio" name="tickets quantity" id="qty5" value="5">
+                    <label for="qty5">5</label>
+                </div>
+            </div>
+            <div>
+                <span>Extras: </span>
+                <div>
+                     <input type="checkbox" name="Merchandise" id="Merchandise">
+                     <label for="Merchandise">Merchandise (36$)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking">Parking (12$)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="water" id="water">
+                    <label for="water">Fresh Water (3$)</label>
+                </div>
+
+            </div>
+
+
+            <div>
+                <label for="special requests">Special Requests: </label>
+                <textarea name="special requests" rows="3" maxlength="500" placeholder="Write here"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Purchase The Tickets</button>
+                <button type="button" onclick="alert ('Congrats! You have purchased your tickets')">YAY</button>
+            </div>
+
+        </fieldset>
+    </form>
+    </div>
+
+    <table id="tickets price" border="">
+        <caption>Tickets Price 2025</caption>
+        <thead>
+            <tr>
+                <th scope="col">Artist</th>
+                <th scope="col">VIP Ticket $</th>
+                <th scope="col">Regular Ticket $</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <th scope="row">The Midnight Bloom</th>
+               <td>230</td>
+               <td>124</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+               <th scope="row">Commuter</th>
+               <td>245</td>
+               <td>180</td>
+
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+             <th scope="row">Groove Nation</th>
+             <td>240</td>
+             <td>120</td>
+
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>                    
+             <th scope="row">Desert Vibes</th>
+             <td>265</td>
+             <td>172</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+               <th scope="row">Synthwave Dream</th>
+               <td>290</td>
+               <td>186</td>
+
+            </tr>
+        </tbody>
+    </table>
+     <p><strong>Note: All set times are subject to change</strong></p>
+
+
+    <footer>
+        <p>All rights reserved to DAZED indie music festival 2025</p>
+    </footer>
+    
+</body>
+</html>
